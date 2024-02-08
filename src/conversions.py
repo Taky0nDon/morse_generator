@@ -44,4 +44,4 @@ text_to_morse_dict = {
         "0":"-----",
         }
 
-morse_to_text = { k: v for k, v in zip(text_to_morse_dict.values(), text_to_morse_dict.keys()) }
+morse_to_text = { k.strip(): v for k, v in zip(text_to_morse_dict.values(), text_to_morse_dict.keys()) }
