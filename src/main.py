@@ -49,13 +49,9 @@ text_to_morse_dict = {
         "0":"-----",
         }
 
-text_to_convert = input(greeting)
-
+text_to_convert = input(greeting).upper()
 result = ""
 for char in text_to_convert:
-    if char.isalpha():
-        result += text_to_morse_dict[char.upper()] + " "
-    else:
-        result += f"{text_to_morse_dict[char]} "
+    result += f"{text_to_morse_dict[char]} "
 
 print(f"Your morse code: {result}")
